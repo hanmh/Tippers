@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\MYEONG_HOON\NaverCloud\MH&apos;Campus_life\2019학년도\2.여름방학\I-SORF\project\tippers\workspace\wrapper\라이언 코드\WebSocket\WebSocket"/>
+		<item value="C:\Users\MYEONG_HOON\NaverCloud\MH&apos;Campus_life\2019학년도\(19.2) 2019학년도 여름방학\I-SORF\project\tippers\workspace\wrapper\내 작업\dexAPI\WebSocket\WebSocket"/>
+		<item value="C:\Users\MYEONG_HOON\NaverCloud\MH&apos;Campus_life\2019학년도\(19.2) 2019학년도 여름방학\I-SORF\project\tippers\workspace\wrapper\내 작업\dexAPI\CoAP\CoAP"/>
+		<item value="C:\Users\MYEONG_HOON\NaverCloud\MH&apos;Campus_life\(19.2) 2019학년도 여름방학\tippers\wrapper\내 작업\wrapper\dexAPI\WebSocket\WebSocket"/>
+		<item value="C:\Users\MYEONG_HOON\NaverCloud\MH&apos;Campus_life\(19.2) 2019학년도 여름방학\tippers\wrapper\내 작업\wrapper\dexAPI\CoAP\CoAP"/>
+		<item value="C:\workspace\WebSocket\WebSocket"/>
+		<item value="C:\workspace"/>
+		<item value="C:\workspace\CoAP\CoAP"/>
+		<item value="C:\Users\MYEONG_HOON\Desktop\CoAP\CoAP"/>
+		<item value="C:\Users\MYEONG_HOON\Desktop\CoAP"/>
+		<item value="C:\Users\MYEONG_HOON\NaverCloud\MH&apos;Campus_life\(19.2) 2019학년도 여름방학\tippers\tippers-framework\tippers-framework\wrapper"/>
+		<item value="C:\Users\MYEONG_HOON\NaverCloud\MH&apos;Campus_life\(19.2) 2019학년도 여름방학\tippers\tippers-framework\tippers-framework\dexapi"/>
+		<item value="C:\Users\MYEONG_HOON\NaverCloud\MH&apos;Campus_life\(19.2) 2019학년도 여름방학\tippers\tippers-framework\tippers-framework"/>
+		<item value="C:\Users\MYEONG_HOON\NaverCloud\MH&apos;Campus_life\(19.2) 2019학년도 여름방학\tippers\tippers-framework"/>
+		<item value="C:\Users\MYEONG_HOON\NaverCloud\MH&apos;Campus_life\2019-i-sorf\tippers\tippers-framework"/>
+	</list>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item value="false" key="FilterByLocation"/>
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode/&gt;&#x0D;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
+		<item value="false" key="ShowDerived"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="325" key="DIALOG_X_ORIGIN"/>
+			<item value="186" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+</section>

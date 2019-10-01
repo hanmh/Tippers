@@ -1,0 +1,21 @@
+package test;
+
+import javax.swing.JOptionPane;
+
+public class ArrayTest {
+
+	public static void main(String[] args)
+	{
+		manageArray tutle = new manageArray(200);
+		while(true)
+		{
+			String order = JOptionPane.showInputDialog("Enter to Order");
+			if(order == "position")
+				tutle.position();		// 현재 위치를 알려주는 명령
+			if(order == "0" || order == "90" || order == "180" || order == "270" || order == "360")
+				tutle.setheading(order);
+			else
+				tutle.renewArray(order);	// 위치 이외의 원래 명령
+		}
+	}
+}

@@ -1,0 +1,60 @@
+package Coap_Protocol.CoAP;
+	
+
+import org.eclipse.californium.core.CoapClient;
+import org.eclipse.californium.core.CoapHandler;
+import org.eclipse.californium.core.CoapResponse;
+import org.eclipse.californium.core.coap.CoAP.Code;
+import org.eclipse.californium.core.coap.MediaTypeRegistry;
+import org.eclipse.californium.core.coap.MessageObserver;
+import org.eclipse.californium.core.coap.Request;
+import org.eclipse.californium.core.coap.Response;
+import org.eclipse.californium.core.network.CoapEndpoint;
+import org.eclipse.californium.core.network.Endpoint;
+
+public class ClientAsynch {
+
+	private CoapClient client;
+
+	public ClientAsynch() {
+		super();
+		client = new CoapClient();
+		client.setURI("coap://localhost/Hello");
+	}
+
+	public void test_get() throws InterruptedException {
+		client.get(new CoapHandler() {
+			public void onLoad(CoapResponse response) {
+				String content = response.getResponseText();
+				System.out.println("GET callback invoked: " + content);
+			}
+
+			public void onError() {
+				System.err.println("Error");
+			}
+		});
+		Thread.sleep(1000);
+
+	}
+
+	public void test_post() throws InterruptedException {
+		client.post(new CoapHandler() {
+			public void onLoad(CoapResponse response) {
+				String content = response.getResponseText();
+				System.out.println("POST callback invoked: " + content);
+			}
+
+			public void onError() {
+				System.err.println("OBSERVING FAILED (press enter to exit)");
+			}
+		}, "121", MediaTypeRegistry.TEXT_PLAIN);
+		Thread.sleep(1000);
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		ClientAsynch c = new ClientAsynch();
+		c.test_get();
+		c.test_post();
+	}
+
+}

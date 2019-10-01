@@ -1,0 +1,17 @@
+package test;
+
+import javax.swing.JOptionPane;
+
+public class ArrayTest {
+
+	public static void main(String[] args)
+	{
+		manageArray tutle = new manageArray(200);
+		while(true)
+		{
+			String order = JOptionPane.showInputDialog("Enter to Order");
+			tutle.renewArray(order);
+			tutle.renewArray("6");
+		}
+	}
+}

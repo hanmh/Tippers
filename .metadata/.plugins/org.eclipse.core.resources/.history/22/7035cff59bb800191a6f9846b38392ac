@@ -1,0 +1,24 @@
+package client;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import Coap_Protocol.CoAP.ClientAsynch;
+import Coap_Protocol.CoAP.ClientSynch;
+
+public class Client{
+
+	private static ClientAsynch clientA;
+	//ClientSynch clientS;
+	
+    public static void main( String[] args ) throws InterruptedException
+    {
+        System.out.println( "Hello! This is CoAP Sample Application." );
+        
+        clientA = new ClientAsynch("coap://localhost/Hello");
+        //clientS = new clientSynch();
+        clientA.test_get();
+		clientA.test_post();
+    }
+}

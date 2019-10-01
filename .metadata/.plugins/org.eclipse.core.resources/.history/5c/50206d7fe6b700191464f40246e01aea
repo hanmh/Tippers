@@ -1,0 +1,45 @@
+package Coap_Protocol.CoAP;
+
+import org.eclipse.californium.core.CoapClient;
+import org.eclipse.californium.core.CoapHandler;
+import org.eclipse.californium.core.CoapResponse;
+import org.eclipse.californium.core.Utils;
+import org.eclipse.californium.core.coap.MessageObserver;
+import org.eclipse.californium.core.coap.Request;
+import org.eclipse.californium.core.coap.Response;
+import org.eclipse.californium.core.coap.CoAP.Code;
+
+import org.eclipse.californium.core.coap.Message;
+
+public class ClientSynch {
+
+	private CoapClient client;
+	
+	public ClientSynch() {
+		
+		client = new CoapClient();
+		client.setURI("coap://localhost/Hello");
+		
+	}
+	
+	public 
+	
+	
+	/*
+	public static void main(String[] args) {
+		CoapClient client = new CoapClient("coap://localhost/Hello");
+
+		CoapResponse response = client.get(); // client send a get request
+		if (response != null) {
+			response = client.get();
+			System.out.println(response.getCode());
+			System.out.println(response.getOptions());
+			System.out.println(response.getResponseText());
+		}
+
+		CoapResponse r = client.get();
+		System.out.println(r.getResponseText());
+		
+	}
+	*/
+}

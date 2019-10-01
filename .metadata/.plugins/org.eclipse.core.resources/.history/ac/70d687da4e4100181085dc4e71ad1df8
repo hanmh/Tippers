@@ -1,0 +1,155 @@
+package test;
+
+import javax.swing.JFrame;
+
+public class manageArray {
+	
+	int[][] array;
+	int lengthOfArray;
+	int curX;
+	int curY;
+	int direction;
+	boolean isPenDown;
+	
+	public manageArray(int len)
+	{
+		lengthOfArray = len;
+		array = new int[len][len];
+		for(int y=0 ; y<len ; y++)
+			for(int x=0 ; x<len ; x++)
+				array[x][y] = 0;
+		
+		direction = 0;
+		curX = 0;
+		curY = len-1;
+		isPenDown = false;
+	}
+	
+	public void renewArray(String order)
+	{
+		switch(order)
+		{
+		case "1":
+			isPenDown = false;
+			break;
+		case "2":
+			isPenDown = true;
+			break;
+		case "3":
+			direction = (++direction)%4;
+			break;
+		case "4":
+			direction = ((--direction)+4)%4;
+			break;
+		case "5":
+			moving(5);
+			break;
+		case "6":
+			drawArray();
+			break;
+		case "0":
+		case "90":
+		case "180":
+		case "270":
+		case "360":	
+			setheading(order);
+			break;
+		case "position":
+			position();
+		}
+	}
+	
+	private void moving(int n)
+	{
+		for( int i=1 ; i<=n ; i++)
+		{
+			move();
+			if(isOver())
+				return;
+			if(isPenDown)
+				array[curX][curY] = 1;
+		}
+	}
+	
+	private void move()
+	{
+		switch(direction)
+		{
+		case 0:
+			--curY;
+			break;
+		case 1:
+			curX++;
+			break;
+		case 2:
+			curY++;
+			break;
+		case 3:
+			curX--;
+			break;
+		}
+	}
+	
+	private boolean isOver()
+	{
+		if(curX < 0){
+			curX = 0;
+			return true;
+		}
+		if(curX >= lengthOfArray){
+			curX = lengthOfArray-1;
+			return true;
+		}
+		if(curY < 0){
+			curY = 0;
+			return true;
+		}
+		if(curY >= lengthOfArray){
+			curY = lengthOfArray-1;
+			return true;
+		}
+		return false;
+	}
+	
+	private void drawArray()
+	{
+		DrawArray panel = new DrawArray(array, lengthOfArray);
+		JFrame application = new JFrame();
+
+		application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		application.add(panel);
+		int sizeOfArray = panel.getSizeOfArray();
+		application.setSize(sizeOfArray*lengthOfArray+40,sizeOfArray*lengthOfArray+40);
+		application.setVisible(true);
+	}
+	
+	public String position()
+	{
+		System.out.printf("현재위치는 %d, %d 입니다.", curX, curY);
+		//String s = String.format("현재위치는 %d, %d 입니다.", curX, curY);// curX, curY는 현재 좌표를 기억하고 있다.
+		//return s;
+	}
+	
+	public void setheading(String angle) // JOptionPane 에서 데이터를 문자열로 입력받을것이다.
+	{
+		switch(angle)
+		{
+		case "0":
+		case "360":
+			direction = 1;	// 1이면 x좌표만 증가하게 되어있다.
+			break;
+			
+		case "90":
+			direction = 0;	// 0이면 y좌표만 감소하게 설정되어있다.
+			break;
+			
+		case "180":
+			direction = 3; // 3이면 x좌표만 감소하게 설정되어있다.
+			break;
+			
+		case "270":
+			direction = 2; // 2이면 y좌표만 증가하게 설정되어있다.
+			break;
+		}
+	}
+}

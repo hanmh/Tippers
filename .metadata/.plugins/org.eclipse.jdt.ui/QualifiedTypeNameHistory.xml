@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
+    <fullyQualifiedTypeName name="test.test"/>
+    <fullyQualifiedTypeName name="java.text.Format"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
+    <fullyQualifiedTypeName name="class11.ButtonFrame"/>
+    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="javax.swing.Scrollable"/>
+    <fullyQualifiedTypeName name="assignment11.test"/>
+    <fullyQualifiedTypeName name="java.awt.geom.Line2D.Double"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="uci.dbh.isg.wrapper.models.TemperatureObservation"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="uci.dbh.isg.wrapper.models.Protocol"/>
+    <fullyQualifiedTypeName name="uci.dbh.isg.wrapper.models.InteractionType"/>
+    <fullyQualifiedTypeName name="Coap_Protocol.CoAP.ClientAsynch"/>
+    <fullyQualifiedTypeName name="Coap_Protocol.CoAP.ClientSynch"/>
+    <fullyQualifiedTypeName name="practice.B"/>
+    <fullyQualifiedTypeName name="org.eclipse.californium.core.CoapResource"/>
+    <fullyQualifiedTypeName name="coapSensor.TemperatureSensor"/>
+    <fullyQualifiedTypeName name="coapResource.sensorResource"/>
+    <fullyQualifiedTypeName name="Coap_sensorModel.SensorResource"/>
+    <fullyQualifiedTypeName name="coap.component.MyCoapClient"/>
+    <fullyQualifiedTypeName name="org.eclipse.californium.core.CoapServer"/>
+    <fullyQualifiedTypeName name="coap.component.MyCoapServer"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="component.DemoClientEndpoint"/>
+    <fullyQualifiedTypeName name="model.sensor.Sensor"/>
+    <fullyQualifiedTypeName name="model.sensor.TemperatureSensor"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="model.sensor.CoapTemperatureSensor"/>
+    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
+    <fullyQualifiedTypeName name="org.eclipse.californium.core.CoapClient"/>
+    <fullyQualifiedTypeName name="wrapper.model.sensor.Sensor"/>
+    <fullyQualifiedTypeName name="wrapper.model.sensor.TemperatureSensor"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="dex.webSocket.DemoServerEndpoint"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="practice.Point"/>
+</qualifiedTypeNameHistroy>
